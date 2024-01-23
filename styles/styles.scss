@@ -85,6 +85,7 @@ section{
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: #6c7983;
 }
 
 .active{
@@ -289,6 +290,7 @@ section{
     align-items: center;
     overflow: hidden;
     border-width: 0.4cap;
+    width: fit-content;
     .btn-text{padding: 0 1rem;}
 
       .btn-icon{
@@ -510,10 +512,109 @@ section{
 }
 
 // Contact Section
-.contact-contect-con{
+.contact-content-con{
     display: flex;
     padding-top: 3.5rem;
+
     .left-contact{
         flex: 2;
+        h4{
+            margin-top: 1rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        p{
+            margin: 1rem 0;
+            line-height: 2rem;
+        }
+
+        .contact-info{
+            .contact-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    margin: .3rem 0 !important;
+                    padding: 0 !important;
+                }
+                .icon{
+                    display: grid;
+                    grid-template-columns: 40px 1fr;
+                    i{
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+
+        .contact-icon{
+            display: flex;
+            margin-top: 2rem;
+            a{
+                display: flex;
+                align-items: center;
+                color: var(--color-grey-0);
+                background-color: var(--color-grey-5);
+                cursor: pointer;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin: 0 .4rem;
+                transition: all .4s ease-in-out;
+
+                &:hover{
+                    background-color: var(--color-secondary);
+                    i{
+                         color: var(--color-primary);
+                    }
+                }
+                i{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+        .input-control{
+            margin: 1.5rem 0;
+            .text-area{
+                box-sizing: border-box;
+                width: 100%;
+                height: 40%;
+                padding:10px;
+                border-radius:30px ;
+                
+            }
+            input{
+                border-radius: 30px;
+                font-size: small;
+                font-weight: inherit;
+                font-family: inherit;
+                padding: .8rem 1.1rem;
+                outline: none;
+                border: none;
+                width: 100%;
+                color:gray;
+                background-color:white;
+                resize: none;
+            }
+        }
+
+        .i-c-2{
+            display: flex;
+            :last-child{
+                margin-left: 1.5rem;
+            }
+        }
     }
 }

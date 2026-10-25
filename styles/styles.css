@@ -169,7 +169,7 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
+  filter: grayscale(0);
 }
 .header-content .left-header .h-shape .image img:hover {
   filter: grayscale(0);

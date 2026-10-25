@@ -180,9 +180,9 @@ section{
                                 height: 530px;
                                 object-fit: cover;
                                 transition: all .4s ease-in-out;
-                                filter: grayscale(100%);
+                                filter: grayscale(0) !important;
                                 &:hover{
-                                    filter: grayscale(0);
+                                    filter: grayscale(0) !important;
                                 }
                             }
                         }
